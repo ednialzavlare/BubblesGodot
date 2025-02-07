@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Bubbles"
 run/main_scene="uid://4hqqssew0ejr"
-config/features=PackedStringArray("4.4", "GL Compatibility")
+config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [rendering]
