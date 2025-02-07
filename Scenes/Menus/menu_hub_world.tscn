@@ -33,9 +33,6 @@ text = "Regresar"
 layout_mode = 2
 text = "Salir"
 
-[node name="Camera2D" type="Camera2D" parent="."]
-anchor_mode = 0
-
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 0
 offset_left = 442.0
@@ -63,10 +60,13 @@ layout_mode = 2
 text = "Nivel 4
 "
 
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
 [connection signal="pressed" from="VBoxContainer/Regresar" to="." method="_on_regresar_pressed"]
 [connection signal="pressed" from="VBoxContainer/Salir" to="." method="_on_salir_pressed"]
-[connection signal="pressed" from="HBoxContainer/Nivel_1" to="." method="_on_opciones_pressed"]
 [connection signal="pressed" from="HBoxContainer/Nivel_1" to="." method="_on_nivel_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/Nivel_1" to="." method="_on_opciones_pressed"]
 [connection signal="pressed" from="HBoxContainer/Nivel_2" to="." method="_on_opciones_pressed"]
 [connection signal="pressed" from="HBoxContainer/Nivel_3" to="." method="_on_opciones_pressed"]
 [connection signal="pressed" from="HBoxContainer/Nivel_4" to="." method="_on_opciones_pressed"]

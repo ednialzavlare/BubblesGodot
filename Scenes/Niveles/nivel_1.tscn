@@ -17,3 +17,4 @@ shape = SubResource("WorldBoundaryShape2D_m12ch")
 
 [node name="Camera2D2" type="Camera2D" parent="."]
 scale = Vector2(0.06, 0.06)
+zoom = Vector2(4, 4)
