@@ -1,0 +1,50 @@
+[gd_scene load_steps=2 format=3 uid="uid://4hqqssew0ejr"]
+
+[ext_resource type="Script" path="res://Scripts/menu_inicio.gd" id="1_ryjsk"]
+
+[node name="MenuInicio" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ryjsk")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -129.0
+offset_top = -129.5
+offset_right = 129.0
+offset_bottom = 129.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Jugar" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Jugar"
+
+[node name="Opciones" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Opciones"
+
+[node name="Creditos" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Creditos"
+
+[node name="Salir" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Salir"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[connection signal="pressed" from="VBoxContainer/Jugar" to="." method="_on_jugar_pressed"]
+[connection signal="pressed" from="VBoxContainer/Opciones" to="." method="_on_opciones_pressed"]
+[connection signal="pressed" from="VBoxContainer/Creditos" to="." method="_on_creditos_pressed"]
+[connection signal="pressed" from="VBoxContainer/Salir" to="." method="_on_salir_pressed"]
