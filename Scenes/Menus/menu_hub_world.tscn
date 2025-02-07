@@ -1,0 +1,72 @@
+[gd_scene load_steps=2 format=3 uid="uid://cryg2j87rtppn"]
+
+[ext_resource type="Script" path="res://Scripts/menu_hub_world.gd" id="1_80vyi"]
+
+[node name="MenuHubWorld" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_80vyi")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -129.0
+offset_top = -129.5
+offset_right = 129.0
+offset_bottom = 129.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Regresar" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Regresar"
+
+[node name="Salir" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Salir"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 442.0
+offset_top = 322.0
+offset_right = 698.0
+offset_bottom = 362.0
+
+[node name="Nivel_1" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "Nivel 1
+"
+
+[node name="Nivel_2" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "Nivel 2
+"
+
+[node name="Nivel_3" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "Nivel 3
+"
+
+[node name="Nivel_4" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "Nivel 4
+"
+
+[connection signal="pressed" from="VBoxContainer/Regresar" to="." method="_on_regresar_pressed"]
+[connection signal="pressed" from="VBoxContainer/Salir" to="." method="_on_salir_pressed"]
+[connection signal="pressed" from="HBoxContainer/Nivel_1" to="." method="_on_opciones_pressed"]
+[connection signal="pressed" from="HBoxContainer/Nivel_1" to="." method="_on_nivel_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/Nivel_2" to="." method="_on_opciones_pressed"]
+[connection signal="pressed" from="HBoxContainer/Nivel_3" to="." method="_on_opciones_pressed"]
+[connection signal="pressed" from="HBoxContainer/Nivel_4" to="." method="_on_opciones_pressed"]
