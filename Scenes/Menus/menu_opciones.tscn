@@ -1,16 +1,16 @@
 [gd_scene load_steps=3 format=3 uid="uid://chn4nacqhic5d"]
 
-[ext_resource type="Script" path="res://Scripts/Menus/menu_inicio.gd" id="1_q3qsr"]
+[ext_resource type="Script" path="res://Scripts/Menus/menu_opciones.gd" id="1_5qf4f"]
 [ext_resource type="Texture2D" uid="uid://bkhybu0dn6jdw" path="res://Assets/Sprites/Fondos/Main_Character.png" id="2_fc4di"]
 
-[node name="MenuInicio" type="Control"]
+[node name="MenuOpciones" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_q3qsr")
+script = ExtResource("1_5qf4f")
 
 [node name="FondoAstronauta" type="TextureRect" parent="."]
 layout_mode = 0
@@ -26,34 +26,16 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -879.0
-offset_top = -137.0
-offset_right = -565.665
-offset_bottom = 103.385
+offset_left = -861.0
+offset_top = -41.0
+offset_right = -547.665
+offset_bottom = 76.93
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Jugar" type="Button" parent="VBoxContainer"]
+[node name="Regresar" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-text = "Jugar"
+text = "Regresar"
 
-[node name="Opciones" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-text = "Opciones"
-
-[node name="Creditos" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-text = "Creditos"
-
-[node name="Salir" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-text = "Salir"
-
-[connection signal="pressed" from="VBoxContainer/Jugar" to="." method="_on_jugar_pressed"]
-[connection signal="pressed" from="VBoxContainer/Opciones" to="." method="_on_opciones_pressed"]
-[connection signal="pressed" from="VBoxContainer/Creditos" to="." method="_on_creditos_pressed"]
-[connection signal="pressed" from="VBoxContainer/Salir" to="." method="_on_salir_pressed"]
+[connection signal="pressed" from="VBoxContainer/Regresar" to="." method="_on_regresar_pressed"]

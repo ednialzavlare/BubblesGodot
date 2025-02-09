@@ -27,10 +27,17 @@ layout_mode = 2
 size_flags_vertical = 3
 text = "Regresar"
 
+[node name="Opciones" type="Button" parent="VBoxContainer"]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+text = "Regresar"
+
 [node name="Salir" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Salir"
 
 [connection signal="pressed" from="VBoxContainer/Regresar" to="." method="_on_regresar_pressed"]
+[connection signal="pressed" from="VBoxContainer/Opciones" to="." method="_on_opciones_pressed"]
 [connection signal="pressed" from="VBoxContainer/Salir" to="." method="_on_salir_pressed"]
