@@ -89,8 +89,8 @@ text = "Salir"
 anchor_mode = 0
 
 [connection signal="pressed" from="VBoxContainer/Regresar" to="." method="_on_regresar_pressed"]
-[connection signal="pressed" from="HBoxContainer/Nivel_1" to="." method="_on_opciones_pressed"]
 [connection signal="pressed" from="HBoxContainer/Nivel_1" to="." method="_on_nivel_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/Nivel_1" to="." method="_on_opciones_pressed"]
 [connection signal="pressed" from="HBoxContainer/Nivel_2" to="." method="_on_opciones_pressed"]
 [connection signal="pressed" from="HBoxContainer/Nivel_3" to="." method="_on_opciones_pressed"]
 [connection signal="pressed" from="HBoxContainer/Nivel_4" to="." method="_on_opciones_pressed"]
