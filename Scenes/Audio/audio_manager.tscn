@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://re3ir12tgxhr"]
+
+[ext_resource type="Script" path="res://Scripts/Audio/audio_manager.gd" id="1_ss5su"]
+[ext_resource type="AudioStream" uid="uid://ct0bn51i6njic" path="res://Assets/Sounds/Robo_HubWorld_MX_Master.wav" id="2_0u20e"]
+
+[node name="AudioManager" type="Node"]
+script = ExtResource("1_ss5su")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_0u20e")
+volume_db = -30.032
+autoplay = true
