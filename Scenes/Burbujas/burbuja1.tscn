@@ -1,7 +1,28 @@
-[gd_scene format=3 uid="uid://bw4mhmn7wdhnj"]
+[gd_scene load_steps=5 format=3 uid="uid://bw4mhmn7wdhnj"]
+
+[ext_resource type="Texture2D" uid="uid://blbajvn2wr38q" path="res://Assets/Sprites/Burbujas/portal.png" id="1_r456c"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ywa34"]
+atlas = ExtResource("1_r456c")
+region = Rect2(676, 289, 1449, 1535)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ol14s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ywa34")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_k4w3n"]
 
 [node name="Burbuja1" type="CharacterBody2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ol14s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_k4w3n")
