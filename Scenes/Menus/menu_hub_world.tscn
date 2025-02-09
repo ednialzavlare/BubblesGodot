@@ -45,11 +45,6 @@ layout_mode = 2
 size_flags_vertical = 3
 text = "Opciones"
 
-[node name="Salir" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-text = "Salir"
-
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 0
 offset_left = 67.0
@@ -81,13 +76,22 @@ size_flags_horizontal = 3
 text = "Nivel 4
 "
 
+[node name="Salir" type="Button" parent="."]
+layout_mode = 2
+offset_left = 68.0
+offset_top = 674.0
+offset_right = 387.67
+offset_bottom = 774.965
+size_flags_vertical = 3
+text = "Salir"
+
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
 
 [connection signal="pressed" from="VBoxContainer/Regresar" to="." method="_on_regresar_pressed"]
-[connection signal="pressed" from="VBoxContainer/Salir" to="." method="_on_salir_pressed"]
 [connection signal="pressed" from="HBoxContainer/Nivel_1" to="." method="_on_opciones_pressed"]
 [connection signal="pressed" from="HBoxContainer/Nivel_1" to="." method="_on_nivel_1_pressed"]
 [connection signal="pressed" from="HBoxContainer/Nivel_2" to="." method="_on_opciones_pressed"]
 [connection signal="pressed" from="HBoxContainer/Nivel_3" to="." method="_on_opciones_pressed"]
 [connection signal="pressed" from="HBoxContainer/Nivel_4" to="." method="_on_opciones_pressed"]
+[connection signal="pressed" from="Salir" to="." method="_on_salir_pressed"]

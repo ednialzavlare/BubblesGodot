@@ -13,6 +13,7 @@ func _process(delta: float) -> void:
 
 
 func _on_regresar_pressed() -> void:
+	Engine.time_scale = 1  # Reset time scale before changing scene
 	get_tree().change_scene_to_file("res://Scenes/Menus/menu_inicio.tscn")
 	pass # Replace with function body.
 

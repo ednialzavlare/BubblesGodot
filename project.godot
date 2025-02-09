@@ -13,7 +13,9 @@ config_version=5
 config/name="Bubbles"
 run/main_scene="res://Scenes/Menus/menu_inicio.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
+boot_splash/image="res://Assets/Sprites/Burbujas/portal.png"
 config/icon="res://icon.svg"
+boot_splash/minimum_display_time=5000
 
 [autoload]
 
