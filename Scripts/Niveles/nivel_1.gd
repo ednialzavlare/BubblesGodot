@@ -16,9 +16,12 @@ func _process(delta: float) -> void:
 func menuPausa():
 	if pausado:
 		menu_pausa.hide()
-		Engine.time_scale = 1
+		reset_game_state()
 	else:
 		menu_pausa.show()
 		Engine.time_scale = 0
-		
-	pausado = !pausado
+		pausado = true
+
+func reset_game_state():
+	Engine.time_scale = 1
+	pausado = false
