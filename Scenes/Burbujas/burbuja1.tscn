@@ -1,3 +1,7 @@
 [gd_scene format=3 uid="uid://bw4mhmn7wdhnj"]
 
-[node name="Burbuja1" type="Node2D"]
+[node name="Burbuja1" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
