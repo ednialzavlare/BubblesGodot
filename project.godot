@@ -14,8 +14,7 @@ config/name="Bubbles"
 run/main_scene="res://Scenes/Menus/menu_inicio.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 boot_splash/image="res://Assets/Sprites/Burbujas/portal.png"
-config/icon="res://icon.svg"
-boot_splash/minimum_display_time=5000
+config/icon="res://Assets/Sprites/PersonajePrincipal/personajeprincipal0.png"
 
 [autoload]
 
@@ -29,7 +28,7 @@ window/stretch/mode="viewport"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/tileset_collision_generator_free_version/plugin.cfg")
+enabled=PackedStringArray("res://addons/butler_export_plugin/plugin.cfg", "res://addons/novatools/plugin.cfg", "res://addons/tileset_collision_generator_free_version/plugin.cfg")
 
 [importer_defaults]
 
@@ -49,3 +48,4 @@ pausa={
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
